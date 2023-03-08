@@ -1,5 +1,6 @@
  
-import pointlessHoc from "./pointlessHoc"
+ import Menu from "./Menu"
+import Favorite from "./Favorite"
 
   function App(props) {
   function send() {
@@ -7,11 +8,10 @@ import pointlessHoc from "./pointlessHoc"
   }
 
   return <div>
- 
-      <h1>This is Heading 😂😂 {props.anotherprops}</h1>
-      <button>Hey there Press ❤️</button>
+ <Menu/>
+ <Favorite/>
  
   </div>
 }
 
-export default pointlessHoc(App)
+export default App
